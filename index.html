@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio de Swan</title>
+    <meta name="description" content="Portfolio de swan regrouppant tout mes projets et hobby">
+    <meta name="keywords" content="portfolio, dev-web, swan,">
+    <meta name="author" content="swan">
+    <meta property="og:title" content="Nom de votre projet">
+    <meta property="og:description" content="Portfolio de swan">
+    <meta property="og:image" content="../assets/IMG_7331">
+    <meta property="og:url" content="https://porfolio_de_swan.com">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="../../Bootstrap/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="../../Bootstrap/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js">
+    </script>
+     <script type="application/ld+json">
+        {
+            @context": "https://schema.org",
+            "@type": "Person",
+            "name": "Swan Vuillet",
+            "jobTitle": "Développeuse web",
+            "knowsAbout": ["HTML", "CSS", "Java"],
+            "url": "https://portfoliodeswan.fr"
+        }
+  </script> 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header id="header">
+        <div class="logo"> insert logo here image<!-- clicable pour revenir a l'index --></div> 
+        <button class="burger" id="burger">
+           ☰
+        </button>
+        <nav id="menu">
+            <ul>
+                <li><a href="/projet_1_html/index.html">Index</a></li>
+                <li><a href="html/hobbie.html">Hobby</a></li>
+                <li><a href="html/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 id="title">Portfolio de Swan developpeur web</h1>
+    <img src="assets/IMG_7331.jpg" alt="Photo de Swan homme portant des lunettes avec t-shirt blanc sourillant" id="photo-profil">
+    <p class="intro">Développeur web en apprentissage je construis actuellement mes <span class="bold">premiers </span>projets pour enrichir ce portfolio</p>
+<div class="competences">
+    <section>
+    <h2>Compétences Technique</h2>
+    <ul>
+        <li><em>placeholder</em></li>
+        <li>placeholder</li>
+        <li>placeholder</li>
+        <li>placeholder</li>
+    </ul>
+</section>
+<section>
+    <h2>Savoir-êtres</h2>
+    <ul>
+        <li>placeholder</li>
+        <li>placeholder</li>
+        <li>placeholder</li>
+        <li>placeholder</li>
+    </ul>
+</section>
+</div>
+<!--peut etre rajouter une section ici pour les XP pro-->
+<div class="formation">
+<section>
+    <h2>Formation</h2>
+    <table class="tableau">
+        <tr>
+            <th>Année</th>
+            <th>Diplome</th> <!-- diplome ?   PLOME !! -->
+            <th>École</th>
+        </tr>
+        <tr>
+            <td>2016</td>
+            <td>Baccalauréat</td>
+            <td>Lycée Charles Baudelaire</td>
+        </tr>
+        <tr>
+            <td>2023</td>
+            <td>Certification Wordpress</td>
+            <td>Simplon Grenoble</td>
+        </tr>
+        <tr>
+            <td>2026</td>
+            <td>A venir</td>
+            <td>Le Campus Numérique in the Alps</td>
+        </tr>
+    </table>
+</section>
+</div>
+<div class="lizard">
+  <iframe 
+    src="https://www.youtube.com/embed/pOIq_AAYDwM"
+    allowfullscreen>
+  </iframe>
+</div>
+<button id="scrolltop" class="scroll-top">↑</button>
+<footer>
+    <div class="footer">
+        <div><h3>Mon site</h3>
+            <p>© 2026 Mon Site - Tous droits réservés</p>
+        </div>
+        <div><h3>Navigation</h3>
+        <ul>
+            <li><a href="#title">index</a></li>
+            <li><a href="html/hobbie.html">hobbies</a></li>
+            <li><a href="html/contact.html">contact</a></li>
+        </ul>
+        </div>
+        <div>
+            <h3>Contact</h3>
+            <p>Email@test.com</p>
+        </div>
+    </div>
+    <div style="height: 1500px;"></div>
+</footer>
+<script>
+const burger = document.getElementById("burger"); // recherche google
+const menu = document.getElementById("menu");
+
+burger.addEventListener("click", function () {
+    menu.classList.toggle("open");
+});
+</script>
+<script>
+const btn = document.getElementById("scrolltop");  //recherche google
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 200) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+});
+btn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+</script>
+<div class="alert alert-primary" role="alert">
+  A simple primary alert—check it out!
+</div>
+<div class="alert alert-secondary" role="alert">
+  A simple secondary alert—check it out!
+</div>
+<div class="alert alert-success" role="alert">
+  A simple success alert—check it out!
+</div>
+<div class="alert alert-danger" role="alert">
+  A simple danger alert—check it out!
+</div>
+<div class="alert alert-warning" role="alert">
+  A simple warning alert—check it out!
+</div>
+<div class="alert alert-info" role="alert">
+  A simple info alert—check it out!
+</div>
+<div class="alert alert-light" role="alert">
+  A simple light alert—check it out!
+</div>
+<div class="alert alert-dark" role="alert">
+  A simple dark alert—check it out!
+</div>
+</body>
+</html>

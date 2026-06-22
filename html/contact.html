@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/contact_style.css">
+</head>
+<body>
+        <header id="header">
+        <div class="logo"> insert logo here </div>
+        <button class="burger" id="burger-btn">
+            Menu
+        </button>
+        <nav id="menu">
+            <ul>
+                <li><a href="/projet_1_html/index.html">Index</a></li>
+                <li><a href="hobbie.html">Hobby</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <h1>Me Contacter</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates explicabo aut delectus, asperiores sunt natus beatae, odit facere quia minima, hic exercitationem ipsa sed nostrum maxime fuga eligendi aliquid amet.</p>
+        <a href="mailto:lorem@ipsum.fr">Me contacter</a>
+    </div>
+    <section>
+        <h2 style="color: red;">Formulaire de contact</h2>
+        <form action="https://httpbin.org/post" method="post"><!--post ou get-->
+            <ul>
+                <li>
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" name="user_name">
+                </li>
+                <li>
+                     <label for="mail">E-mail</label>
+                     <input type="email" id="mail" name="user_mail" >
+                </li>
+                <li>
+                    <label for="msg">Message:</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                </li>
+            </ul>   
+            <div class="button">
+                 <button type="submit">Envoyer le message</button>
+            </div> 
+        </form>
+    </section>
+    <footer>
+    <div class="footer">
+        <div><h3>Mon site</h3>
+            <p>© 2026 Mon Site - Tous droits réservés</p>
+        </div>
+        <div><h3>Navigation</h3>
+        <ul>
+            <li><a href="/projet_1_html/index.html">index</a></li>
+            <li><a href="/projet_1_html/html/hobbie.html">hobbies</a></li>
+            <li><a href="/projet_1_html/html/contact.html">contact</a></li>
+        </ul>
+        </div>
+        <div>
+            <h3>Contact</h3>
+            <p>Email@test.com</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
